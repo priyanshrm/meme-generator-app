@@ -32,3 +32,57 @@
     margin: auto;
     margin-right: 5%;
 }
+
+.main {
+    margin-top: 3%;
+    /* border: 1px solid black; */
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.main--top {
+    /* border: 1px solid black; */
+    display: flex;
+    
+}
+
+.firstword, .secondword {
+    width: 250px;
+    height: 30px;
+    margin: auto;
+}
+
+.firstword {
+    margin-left: 0px;
+}
+
+.secondword {
+    margin-right: 0px;
+}
+
+
+.main--middle {
+    /* border: 1px solid black; */
+    margin-top: 5%;
+}
+
+.image--generate--btn {
+    width: 100%;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+}
+
+.main--bottom {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 8%;
+    height: 450px;
+}
+
+.image--generated {
+    border-radius: 5px;
+    height: 450px;
+}

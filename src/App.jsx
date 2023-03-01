@@ -1,4 +1,3 @@
-import myLogo from './assets/troll-face.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import Main from './components/Main'

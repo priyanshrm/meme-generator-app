@@ -1,5 +1,16 @@
 export default function Main(){
     return(
-        <h1>This is Main</h1>
+        <main className="main">
+            <div className="main--top">
+                <input type="text" className="firstword"></input>
+                <input type="text" className="secondword"></input>
+            </div>
+            <div className="main--middle">
+                <button className="image--generate--btn">Get a new meme image 🖼</button>
+            </div>
+            <div className="main--bottom">
+                <img src="" className="image--generated"></img>
+            </div>
+        </main>
     )
 }
