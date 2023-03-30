@@ -1,15 +1,19 @@
+import React from 'react'
+import memesData from './data/memesData'
+import Header from './components/Navbar'
+import MemePage from './components/Main'
 import './App.css'
-import Navbar from './components/Navbar'
-import Main from './components/Main'
 
-function App() {
+export default function App(){
+
 
   return (
     <>
-    <Navbar />
-    <Main />
+    <Header />
+    <MemePage 
+      key = {memesData.success}
+      memes = {memesData}
+    />
     </>
   )
 }
-
-export default App

@@ -1,15 +1,11 @@
-import myLogo from '../assets/troll-face.png'
+import React from "react";
 
-export default function Main(){
-    return(
-        <nav className="navbar">
-            <div className="navbar--left">
-                <img src={myLogo} alt="logo"></img>
-                <h2>Meme Generator</h2>
-            </div>
-            <div className="navbar--right">
-                <p>React Course - Project 3</p>
-            </div>
-        </nav>
+export default function foo(){
+    return (
+        <div className="header">
+            <img src="src/assets/troll-face.svg" className="header--img"></img>
+            <h2 className="header--title">Meme Generator</h2>
+            <h3 className="header--desc">React Course - Project 3</h3>
+        </div>
     )
 }
