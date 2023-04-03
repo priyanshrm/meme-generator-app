@@ -4,15 +4,25 @@ export default function foo(){
     const [meme, setMeme] = React.useState({
         topText: "",
         bottomText: "",
-        randomImage: ""
+        randomImage: "https://i.imgflip.com/2wifvo.jpg"
     })
 
     const [memesArray, setMemesArray] = React.useState([])
 
+    // console.log(meme.randomImage)
+
     React.useEffect(() => {
-        fetch("https://api.imgflip.com/get_memes")
-            .then(response => response.json())
-            .then(data => setMemesArray(data.data.memes))
+        async function getMemes() {
+            const response = await fetch("https://api.imgflip.com/get_memes")
+            const data = await response.json()
+            setMemesArray(data.data.memes)
+        }
+        getMemes()
+
+        // cleanup function
+        return () => {
+            
+        }
     }, [])
 
     function handleClick(e) {
