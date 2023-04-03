@@ -1,20 +1,24 @@
 import React from "react"
 
-export default function foo(props){
+export default function foo(){
     const [meme, setMeme] = React.useState({
         topText: "",
         bottomText: "",
         randomImage: ""
     })
 
-    const array = props.memes.data.memes
+    const [memesArray, setMemesArray] = React.useState([])
 
-    // console.log(meme.topText, meme.bottomText)
+    React.useEffect(() => {
+        fetch("https://api.imgflip.com/get_memes")
+            .then(response => response.json())
+            .then(data => setMemesArray(data.data.memes))
+    }, [])
 
     function handleClick(e) {
         e.preventDefault()
-        const num = Math.floor(Math.random() * array.length)
-        setMeme(prevState => ({...prevState, randomImage: array[num].url}))
+        const num = Math.floor(Math.random() * memesArray.length)
+        setMeme(prevState => ({...prevState, randomImage: memesArray[num].url}))
     }
 
     function handleChange(event) {

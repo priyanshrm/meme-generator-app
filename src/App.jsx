@@ -11,8 +11,6 @@ export default function App(){
     <>
     <Header />
     <MemePage 
-      key = {memesData.success}
-      memes = {memesData}
     />
     </>
   )

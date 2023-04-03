@@ -1,5 +1,5 @@
 .header {
-    border: 1px black solid;
+    /* border: 1px black solid; */
     display: flex;
     background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
     margin: -10px;
@@ -29,7 +29,7 @@
 }
 
 .meme--page{
-    border: 1px black solid;
+    border: 1px rgb(255, 255, 255) solid;
 }
 
 main {
@@ -61,7 +61,7 @@ main {
 }
 
 .form--img--container {
-    border: 1px black solid;
+    /* border: 1px black solid; */
     padding: 0.5em;
     position: relative;
 }
